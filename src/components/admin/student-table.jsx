@@ -165,8 +165,8 @@ export function StudentTable() {
               <TableBody>
                 {filteredStudents.map((student) => (
                   <TableRow key={student.id}>
-                    <TableCell>{student.name}</TableCell>
-                    <TableCell>{student.cohort}</TableCell>
+                    <TableCell className="whitespace-nowrap">{student.name}</TableCell>
+                    <TableCell className="whitespace-nowrap">{student.cohort}</TableCell>
                     <TableCell>
                       <div className="flex gap-4">
                         {student.courses.map((course, i) => (

@@ -20,7 +20,7 @@ const SettingsPage = () => {
         </TabsList>
 
         <TabsContent value="account">
-          <Card>
+          <Card className="bg-white">
             <CardHeader>
               <CardTitle>Account Settings</CardTitle>
               <CardDescription>Manage your account details and preferences</CardDescription>
@@ -40,7 +40,7 @@ const SettingsPage = () => {
                   <SelectTrigger id="language">
                     <SelectValue placeholder="Select a language" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-slate-100">
                     <SelectItem value="en">English</SelectItem>
                     <SelectItem value="es">Spanish</SelectItem>
                     <SelectItem value="fr">French</SelectItem>
@@ -55,7 +55,7 @@ const SettingsPage = () => {
         </TabsContent>
 
         <TabsContent value="notifications">
-          <Card>
+          <Card className="bg-white">
             <CardHeader>
               <CardTitle>Notification Preferences</CardTitle>
               <CardDescription>Manage how you receive notifications</CardDescription>
@@ -63,15 +63,15 @@ const SettingsPage = () => {
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <Label htmlFor="email-notifications">Email Notifications</Label>
-                <Switch id="email-notifications" />
+                <Switch className=" bg-slate-200" id="email-notifications" />
               </div>
               <div className="flex items-center justify-between">
                 <Label htmlFor="push-notifications">Push Notifications</Label>
-                <Switch id="push-notifications" />
+                <Switch className=" bg-slate-200" id="push-notifications"  />
               </div>
               <div className="flex items-center justify-between">
                 <Label htmlFor="sms-notifications">SMS Notifications</Label>
-                <Switch id="sms-notifications" />
+                <Switch className=" bg-slate-200" id="sms-notifications" />
               </div>
             </CardContent>
             <CardFooter>
@@ -102,11 +102,11 @@ const SettingsPage = () => {
               </div>
               <div className="flex items-center justify-between">
                 <Label htmlFor="data-collection">Allow Data Collection</Label>
-                <Switch id="data-collection" />
+                <Switch className=" bg-slate-200" id="data-collection" />
               </div>
               <div className="flex items-center justify-between">
                 <Label htmlFor="third-party-sharing">Third-party Data Sharing</Label>
-                <Switch id="third-party-sharing" />
+                <Switch className=" bg-slate-200" id="third-party-sharing" />
               </div>
             </CardContent>
             <CardFooter>
