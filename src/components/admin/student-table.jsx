@@ -108,7 +108,7 @@ export function StudentTable() {
   console.log('Rendering StudentTable. Students:', students.length, 'Filtered:', filteredStudents.length)
 
   return (
-    <div className="flex flex-col p-4">
+    <div className="flex flex-col p-4 -mt-6">
       <div className="p-6 mt-4 w-full bg-white rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <div className="flex gap-4 mb-4 md:mb-0">
