@@ -27,7 +27,7 @@ function App() {
           <Header toggleSidebar={toggleSidebar} />
           <main className="flex-1 overflow-x-hidden overflow-y-auto">
             <Routes>
-              <Route path="/" element={<DashBoard />} />
+              <Route path="/" element={<StudentsPage />} />
               <Route path="/dashboard" element={<DashBoard />} />
               <Route path="/chapter" element={<Chapter/>} />
               <Route path="/students" element={<StudentsPage />} />
