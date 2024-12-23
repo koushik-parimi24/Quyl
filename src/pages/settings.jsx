@@ -81,7 +81,7 @@ const SettingsPage = () => {
         </TabsContent>
 
         <TabsContent value="privacy">
-          <Card>
+          <Card className="bg-white">
             <CardHeader>
               <CardTitle>Privacy Settings</CardTitle>
               <CardDescription>Control your privacy and data sharing preferences</CardDescription>
