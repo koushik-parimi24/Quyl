@@ -5,6 +5,9 @@ import { Sidebar } from './components/admin/Sidebar';
 import StudentsPage from './pages/StudentsPage';
 import Chapter from './pages/chapter';
 import DashBoard from './pages/Dashboard';
+import Help from './pages/help-page';
+import ReportsPage from './pages/reports';
+import SettingsPage from './pages/settings';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -28,6 +31,9 @@ function App() {
               <Route path="/dashboard" element={<DashBoard />} />
               <Route path="/chapter" element={<Chapter/>} />
               <Route path="/students" element={<StudentsPage />} />
+              <Route path="/help" element={<Help/>} />
+              <Route path="/reports" element={<ReportsPage/>} />
+              <Route path="/settings" element={<SettingsPage/>} />
               {/* Add more routes here as needed */}
             </Routes>
           </main>
